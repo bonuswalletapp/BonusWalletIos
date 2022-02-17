@@ -31,6 +31,11 @@ func applyStyle() {
         tabAppearance.backgroundColor = Colors.appWhite
         UITabBar.appearance().standardAppearance = tabAppearance
         UITabBar.appearance().scrollEdgeAppearance = tabAppearance
+        let barAppearance = UITabBarItemAppearance()
+        barAppearance.normal.badgeBackgroundColor = Colors.appHighlightGreen
+        tabAppearance.stackedLayoutAppearance = barAppearance
+        tabAppearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: Colors.tabBarTextColorSelected]
+        tabAppearance.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: Colors.tabBarTextColorNormal]
     } else {
         UITabBar.appearance().tintColor = Colors.appTint
         UINavigationBar.appearance().barTintColor = Colors.headerThemeColor
