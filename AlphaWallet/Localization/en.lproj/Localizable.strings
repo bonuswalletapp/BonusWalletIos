@@ -469,7 +469,7 @@
 "gettingStarted.subtitle" = "Welcome to JaxWallet";
 "gettingStarted.newWallet" = "CREATE A NEW WALLET";
 "gettingStarted.alreadyHaveWallet" = "I already have a wallet:";
-"backup.prompt.title" = "Claim your free 1000 JAX RUPEE by verifying KYC";
+"backup.prompt.title" = "Claim your free 1000 JRUPPEE by verifying KYC";
 "backup.prompt.description.withAmount" = "You have not backed up your wallet yet. You have %@ USD net. Act now.";
 "backup.prompt.backupButton.title" = "Start verification";
 "backup.prompt.backup.remindLater" = "Remind me to back up later?";
