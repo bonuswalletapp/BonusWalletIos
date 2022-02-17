@@ -54,7 +54,7 @@ class SettingViewHeader: UIView {
 
         NSLayoutConstraint.activate([
             stackView.anchorsConstraint(to: self),
-            bottomSperator.heightAnchor.constraint(equalToConstant: 1),
+            bottomSperator.heightAnchor.constraint(equalToConstant: 0),
             topSeparatorHeight
         ])
     }

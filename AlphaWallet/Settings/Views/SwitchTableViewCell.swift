@@ -78,5 +78,6 @@ class SwitchTableViewCell: UITableViewCell {
         titleLabel.textColor = viewModel.titleTextColor
         iconImageView.image = viewModel.icon
         switchView.isSelected = viewModel.value
+        backgroundColor = Colors.appBackground
     }
 }

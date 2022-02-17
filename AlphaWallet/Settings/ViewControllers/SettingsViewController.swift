@@ -27,6 +27,7 @@ class SettingsViewController: UIViewController {
         tableView.register(SettingTableViewCell.self)
         tableView.register(SwitchTableViewCell.self)
         tableView.separatorStyle = .singleLine
+        tableView.separatorColor = Colors.settingsSeperatorColor
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.dataSource = self
         tableView.delegate = self

@@ -137,6 +137,7 @@ struct Colors {
     static let segmentIndicatorColor = UIColor(hex: "AA2F00")
     static let borderGrayColor = UIColor(hex: "c4cad1")
     static let settingsBackGroundColor = UIColor(hex: "E9ECEF")
+    static let settingsSeperatorColor = UIColor(hex: "8D97AA")
     static let clear = UIColor.clear
     static let priceColor = UIColor(hex: "808392")
     static let newBorder = UIColor(hex: "C4CAD1")
