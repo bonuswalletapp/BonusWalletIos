@@ -254,18 +254,19 @@ class SingleChainTokenCoordinator: Coordinator {
                             return .value(.none)
                         }
                     case .erc20:
-                        let balanceCoordinator = GetERC20BalanceCoordinator(forServer: server)
-                        return balanceCoordinator.getBalance(for: address, contract: each).then { balance -> Promise<BatchObject> in
-//                            if balance > 0 {
-//                                return strongSelf.fetchBatchObjectFromContractData(for: each, server: server, storage: strongSelf.storage)
-//                            } else {
-//                                return .value(.none)
-//                            }
-                            print("here: balance & fetch token \(address)")
-                            return strongSelf.fetchBatchObjectFromContractData(for: each, server: server, storage: strongSelf.storage)
-                        }.recover { _ -> Guarantee<BatchObject> in
-                            return .value(.none)
-                        }
+//                        let balanceCoordinator = GetERC20BalanceCoordinator(forServer: server)
+//                        return balanceCoordinator.getBalance(for: address, contract: each).then { balance -> Promise<BatchObject> in
+////                            if balance > 0 {
+////                                return strongSelf.fetchBatchObjectFromContractData(for: each, server: server, storage: strongSelf.storage)
+////                            } else {
+////                                return .value(.none)
+////                            }
+//                            print("here: balance & fetch token \(address)")
+//                            return strongSelf.fetchBatchObjectFromContractData(for: each, server: server, storage: strongSelf.storage)
+//                        }.recover { _ -> Guarantee<BatchObject> in
+//                            return .value(.none)
+//                        }
+                        return strongSelf.fetchBatchObjectFromContractData(for: each, server: server, storage: strongSelf.storage)
                     case .erc721:
                         //Handled in PrivateBalanceFetcher.refreshBalanceForErc721Or1155Tokens()
                         return .value(.none)
