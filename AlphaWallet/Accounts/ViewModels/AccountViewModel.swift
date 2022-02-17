@@ -78,11 +78,12 @@ struct AccountViewModel {
 extension AccountViewModel {
     //Because struct can't capture self in closure we using static func to resolve blockie
     static func resolveBlockie(for viewModel: AccountViewModel, size: Int = 8, scale: Int = 3) {
-        let generator = BlockiesGenerator()
-        generator.promise(address: viewModel.address, size: size, scale: scale).done { image in
-            viewModel.icon.value = image
-        }.catch { _ in
-            viewModel.icon.value = nil
-        }
+        viewModel.icon.value = BlockiesImage.image(R.image.profileImagePlaceHolder()!)
+//        let generator = BlockiesGenerator()
+//        generator.promise(address: viewModel.address, size: size, scale: scale).done { image in
+//            viewModel.icon.value = image
+//        }.catch { _ in
+//            viewModel.icon.value = nil
+//        }
     }
 }
