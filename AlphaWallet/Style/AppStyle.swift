@@ -10,7 +10,7 @@ func applyStyle() {
     if #available(iOS 15.0, *) {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = Colors.headerThemeColor
+        appearance.backgroundColor = Colors.navigationColor
         appearance.setBackIndicatorImage(R.image.backWhite(), transitionMaskImage: R.image.backWhite())
         appearance.shadowImage = UIImage()
         appearance.titleTextAttributes = [
@@ -37,8 +37,8 @@ func applyStyle() {
         tabAppearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: Colors.tabBarTextColorSelected]
         tabAppearance.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: Colors.tabBarTextColorNormal]
     } else {
-        UITabBar.appearance().tintColor = Colors.appTint
-        UINavigationBar.appearance().barTintColor = Colors.headerThemeColor
+        UITabBar.appearance().tintColor = Colors.appHighlightGreen
+        UINavigationBar.appearance().barTintColor = Colors.appWhite
         UINavigationBar.appearance().backIndicatorImage = R.image.backWhite()
         UINavigationBar.appearance().backIndicatorTransitionMaskImage = R.image.backWhite()
         UINavigationBar.appearance().titleTextAttributes = [
@@ -108,13 +108,15 @@ struct Colors {
     static let darkGray = UIColor(hex: "2f2f2f")
     static let black = UIColor(hex: "313849")
     static let lightBlack = UIColor(hex: "313849")
-    static let headerThemeColor = UIColor(hex: "FD9651")
-    static let tabBarTextColorNormal = UIColor(hex: "898DB4")
+    static let headerThemeColor = UIColor(hex: "4D5085")
+    static let tabBarTextColorNormal = navigationColor
     static let tabBarTextColorSelected = UIColor(hex: "152172")
     static let appBackground = UIColor(hex: "F5F5F5")
     static let appTint = UIColor(red: 21, green: 33, blue: 114)
     static let navigationTitleColor = UIColor.black
+    static let navigationColor = UIColor(hex: "FD9651")
     static let navigationButtonTintColor = appWhite
+    static let segmentColor = UIColor(hex: "FD9651")
     static let appWhite = UIColor.white
     static let appText = UIColor(hex: "585B8C")
     static let appSubtitle = UIColor(red: 117, green: 117, blue: 117)
