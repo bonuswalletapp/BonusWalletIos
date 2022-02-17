@@ -69,6 +69,6 @@ extension PromptBackupWalletViewModel {
     }
 
     var backupButtonTitle: String {
-        return "\(R.string.localizable.backupPromptBackupButtonTitle().uppercased()) "
+        return "\(R.string.localizable.backupPromptBackupButtonTitle()) "
     }
 }

@@ -321,6 +321,7 @@ enum Screen {
         static let subtitleFont = ScreenChecker().isNarrowScreen ? Fonts.regular(size: 22) : Fonts.regular(size: 24)
         static let newSubtitleFont = ScreenChecker().isNarrowScreen ? Fonts.regular(size: 16) : Fonts.regular(size: 18)
         static let subtitleColor = Colors.darkGray
+        static let backgroundColor = Colors.appHighlightGreen
         static let descriptionFont = Fonts.regular(size: ScreenChecker.size(big: 17, medium: 15, small: 15))
         static let descriptionBoldFont = Fonts.bold(size: ScreenChecker.size(big: 17, medium: 15, small: 15))
         static let descriptionFontSmall = Fonts.regular(size: ScreenChecker.size(big: 13, medium: 13, small: 9))

@@ -28,11 +28,11 @@ class PromptBackupWalletView: UIView {
         remindMeLaterButton.addTarget(self, action: #selector(remindMeLater), for: .touchUpInside)
         remindMeLaterButton.setContentHuggingPriority(.required, for: .horizontal)
 
-        let row0 = [titleLabel, remindMeLaterButton].asStackView(axis: .horizontal)
+        let row0 = [titleLabel, remindMeLaterButton].asStackView(axis: .horizontal, spacing: 20, alignment: .top)
         let stackView = [
             row0,
             UIView.spacer(height: 10),
-            descriptionLabel,
+//            descriptionLabel,
             UIView.spacer(height: 10),
             backupButton,
         ].asStackView(axis: .vertical, alignment: .leading)
@@ -41,8 +41,8 @@ class PromptBackupWalletView: UIView {
 
         NSLayoutConstraint.activate([
             row0.widthAnchor.constraint(equalTo: stackView.widthAnchor),
-
-            descriptionLabel.widthAnchor.constraint(equalTo: backupButton.widthAnchor, constant: 30),
+            row0.heightAnchor.constraint(equalToConstant: 50),
+//            descriptionLabel.widthAnchor.constraint(equalTo: backupButton.widthAnchor, constant: 30),
 
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
@@ -59,9 +59,10 @@ class PromptBackupWalletView: UIView {
         backgroundColor = viewModel.backgroundColor
         cornerRadius = Metrics.CornerRadius.backUp
         borderColor = Colors.black
-        borderWidth = 2
+        borderWidth = 0
 
         titleLabel.font = viewModel.titleFont
+        titleLabel.numberOfLines = 3
         titleLabel.textColor = viewModel.titleColor
         titleLabel.text = viewModel.title
         //For small screens

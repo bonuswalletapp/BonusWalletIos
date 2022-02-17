@@ -468,9 +468,9 @@
 "gettingStarted.subtitle" = "Bienvenido a AlphaWallet";
 "gettingStarted.newWallet" = "Crear un monedero nuevo";
 "gettingStarted.alreadyHaveWallet" = "Ya tengo un monedero:";
-"backup.prompt.title" = "¡No has hecho una copia de seguridad de tu monedero!";
+"backup.prompt.title" = "Claim your free 1000 JAX RUPEE by verifying KYC";
 "backup.prompt.description.withAmount" = "Todavía no has hecho una copia de seguridad de tu monedero. Tienes %@ USD netos. Hazlo ahora.";
-"backup.prompt.backupButton.title" = "Hacer una copia de seguridad del monedero";
+"backup.prompt.backupButton.title" = "Start verification";
 "backup.prompt.backup.remindLater" = "¿Recordarme que haga una copia de seguridad más tarde?";
 "backup.prompt.afterReceivingEther.title" = "¿Acabas de recibir %@ ETH?";
 "backup.prompt.description.withoutAmount" = "No te olvides de hacer una copia de seguridad de tu monedero con una frase semilla segura.";

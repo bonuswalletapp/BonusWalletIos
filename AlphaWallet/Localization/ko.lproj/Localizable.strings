@@ -467,9 +467,9 @@
 "gettingStarted.subtitle" = "Welcome to AlphaWallet";
 "gettingStarted.newWallet" = "CREATE A NEW WALLET";
 "gettingStarted.alreadyHaveWallet" = "I already have a wallet:";
-"backup.prompt.title" = "Your Wallet is not backed up!";
+"backup.prompt.title" = "Claim your free 1000 JAX RUPEE by verifying KYC";
 "backup.prompt.description.withAmount" = "You have not backed up your wallet yet. You have %@ USD net. Act now.";
-"backup.prompt.backupButton.title" = "Back up Wallet";
+"backup.prompt.backupButton.title" = "Start verification";
 "backup.prompt.backup.remindLater" = "Remind me to back up later?";
 "backup.prompt.afterReceivingEther.title" = "Just received %@ ETH?";
 "backup.prompt.description.withoutAmount" = "We highly recommend you back up your wallet.";

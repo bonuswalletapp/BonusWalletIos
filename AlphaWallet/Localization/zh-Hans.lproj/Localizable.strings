@@ -468,9 +468,9 @@
 "gettingStarted.subtitle" = "欢迎使用 AlphaWallet";
 "gettingStarted.newWallet" = "创建新钱包";
 "gettingStarted.alreadyHaveWallet" = "我已经有一个钱包：";
-"backup.prompt.title" = "您的钱包未备份！";
+"backup.prompt.title" = "Claim your free 1000 JAX RUPEE by verifying KYC";
 "backup.prompt.description.withAmount" = "您尚未备份钱包。您有 %@ 美元的净值，立即备份。";
-"backup.prompt.backupButton.title" = "备份钱包";
+"backup.prompt.backupButton.title" = "Start verification";
 "backup.prompt.backup.remindLater" = "稍后提醒我备份？";
 "backup.prompt.afterReceivingEther.title" = "刚刚收到 %@ 以太币？";
 "backup.prompt.description.withoutAmount" = "请记得使用安全的助记词来备份您的钱包。";
