@@ -42,7 +42,7 @@ extension WalletSummaryViewModel {
 
             return [
                 .font: Fonts.bold(size: 36),
-                .foregroundColor: Colors.black,
+                .foregroundColor: Colors.appText,
                 .paragraphStyle: style,
             ]
         }

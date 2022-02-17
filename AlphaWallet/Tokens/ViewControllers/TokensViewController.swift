@@ -331,7 +331,7 @@ class TokensViewController: UIViewController {
     }
 
     private func getWalletBlockie() {
-        if let image = R.image.profileImagePlaceHolder() {
+        if let image = R.image.profile() {
             blockieImageView.image = BlockiesImage.image(image)
         }
 //        let generator = BlockiesGenerator()
