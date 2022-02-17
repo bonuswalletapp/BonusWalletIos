@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "tab_transaction_active.svg",
+      "filename" : "profile.svg",
       "idiom" : "universal",
       
     },
@@ -10,8 +10,5 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "template-rendering-intent" : "original"
   }
 }
