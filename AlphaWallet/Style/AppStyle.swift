@@ -110,7 +110,7 @@ struct Colors {
     static let lightBlack = UIColor(hex: "313849")
     static let headerThemeColor = UIColor(hex: "4D5085")
     static let tabBarTextColorNormal = navigationColor
-    static let tabBarTextColorSelected = UIColor(hex: "152172")
+    static let tabBarTextColorSelected = appHighlightGreen
     static let appBackground = UIColor(hex: "F5F5F5")
     static let appTint = UIColor(red: 21, green: 33, blue: 114)
     static let navigationTitleColor = UIColor.black
@@ -120,7 +120,7 @@ struct Colors {
     static let appWhite = UIColor.white
     static let appText = UIColor(hex: "585B8C")
     static let appSubtitle = UIColor(red: 117, green: 117, blue: 117)
-    static let appHighlightGreen = UIColor(red: 117, green: 185, blue: 67)
+    static let appHighlightGreen = UIColor(hex: "44D5A3")
     static let appActionButtonGreen = UIColor(hex: "44D5A3")
     static let disabledActionButton = UIColor(hex: "44D5A380")
     static let appActionButtonShadow = UIColor.clear
@@ -134,7 +134,7 @@ struct Colors {
     static let qrCodeRectBorders = UIColor(red: 216, green: 216, blue: 216)
     static let loadingIndicatorBorder = UIColor(red: 237, green: 237, blue: 237)
     static let sortByTextColor = UIColor(red: 51, green: 51, blue: 51)
-    static let segmentIndicatorColor = UIColor(hex: "E7A634")
+    static let segmentIndicatorColor = UIColor(hex: "AA2F00")
     static let borderGrayColor = UIColor(hex: "c4cad1")
     static let settingsBackGroundColor = UIColor(hex: "E9ECEF")
     static let clear = UIColor.clear

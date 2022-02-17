@@ -122,7 +122,7 @@
 "wallet.create.button.title" = "Create Wallet";
 "wallet.watch.button.title" = "Watch Wallet";
 "wallet.create.inProgress" = "Creating wallet...";
-"wallet.import.button.title" = "Import Wallet";
+"wallet.import.button.title" = "Import";
 "wallets.backupKeystoreWallet.alertSheet.title" = "Export Keystore JSON";
 "wallets.backupKeystoreWallet.alertSheet.title.shorter" = "Export Keystore";
 "wallets.backupKeystoreWallet.introduction.title" = "What is Keystore JSON?";
@@ -173,7 +173,7 @@
 "editTokens.searchBar.placeholder.title" = "Search tokens";
 "importWallet.import.alertSheet.option.title" = "iCloud/Dropbox/Google Drive";
 "importWallet.import.alertSheet.title" = "Import Wallet Options";
-"importWallet.import.button.title" = "Import Wallet";
+"importWallet.import.button.title" = "Import";
 "importWallet.import.invalidAddress" = "Invalid Ethereum Address";
 "importWallet.import.invalidPrivateKey" = "Private Key has to be 64 characters long";
 "importWallet.import.invalidMnemonicCount" = "Seed phrase has to be 12 words";

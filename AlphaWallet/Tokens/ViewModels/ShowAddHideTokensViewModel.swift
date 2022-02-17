@@ -12,7 +12,7 @@ struct ShowAddHideTokensViewModel {
     var addHideTokensTitle: String? = R.string.localizable.walletsAddHideTokensTitle()
 
     var addHideTokensTintColor: UIColor {
-        Colors.headerThemeColor
+        Colors.appActionButtonGreen
     }
 
     var addHideTokensTintFont: UIFont? {

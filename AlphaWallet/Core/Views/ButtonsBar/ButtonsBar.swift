@@ -143,8 +143,8 @@ class ButtonsBar: UIView, ButtonsBarViewType {
 
     init(configuration: ButtonsBarConfiguration = .green(buttons: 1), showHaveWalletLabel: Bool = false) {
         haveWalletLabel.textAlignment = .center
-        haveWalletLabel.textColor = Colors.headerThemeColor
-        haveWalletLabel.font = Fonts.regular(size: 18)
+        haveWalletLabel.textColor = Colors.appText
+        haveWalletLabel.font = Fonts.regular(size: 12)
         haveWalletLabel.text = R.string.localizable.gettingStartedAlreadyHaveWallet()
         buttonsStackView = [UIView]().asStackView(axis: .horizontal, distribution: .fillEqually, spacing: 7)
         innerStackView = [UIView]().asStackView(axis: .horizontal, distribution: .fill, spacing: 10)

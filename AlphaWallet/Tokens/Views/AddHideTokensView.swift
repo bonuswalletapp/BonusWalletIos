@@ -14,8 +14,8 @@ class AddHideTokensView: UIView, ReusableTableHeaderViewType {
         button.addTarget(self, action: #selector(addHideTokensSelected), for: .touchUpInside)
         button.layer.cornerRadius = 5
         button.layer.borderWidth = 2
-        button.layer.borderColor = Colors.headerThemeColor.cgColor
-        button.setTitleColor(Colors.headerThemeColor, for: .normal)
+        button.layer.borderColor = Colors.appActionButtonGreen.cgColor
+        button.setTitleColor(Colors.appActionButtonGreen, for: .normal)
         return button
     }()
 

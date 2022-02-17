@@ -129,7 +129,7 @@ private class Dialog: UIView {
         backgroundColor = Colors.appWhite
 
         titleLabel.font = Fonts.bold(size: 18)
-        titleLabel.textColor = Colors.headerThemeColor
+        titleLabel.textColor = Colors.appText
         titleLabel.textAlignment = .center
         titleLabel.text = R.string.localizable.onboardingNewWalletBackupWalletTitle()
 
