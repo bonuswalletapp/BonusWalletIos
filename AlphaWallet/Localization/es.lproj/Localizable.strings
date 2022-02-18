@@ -111,6 +111,7 @@
 "settings.section.wallet.title" = "Monedero";
 "settings.change.wallet.title" = "Cambiar / Añadir monedero";
 "settings.show.my.wallet.title" = "Mostrar la dirección de mi monedero";
+"settings.kyc.verification.title" = "KYC Verification";
 "suppport.title" = "Asistencia";
 "transactions.noTransactions.label.title" = "¡Todavía no hay transacciones!";
 "wallet.navigation.title" = "Cambiar monedero";

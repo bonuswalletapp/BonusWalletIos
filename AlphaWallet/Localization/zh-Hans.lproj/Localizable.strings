@@ -111,6 +111,7 @@
 "settings.section.wallet.title" = "我的钱包";
 "settings.change.wallet.title" = "更改/添加钱包";
 "settings.show.my.wallet.title" = "显示我的钱包地址";
+"settings.kyc.verification.title" = "KYC Verification";
 "suppport.title" = "支持";
 "transactions.noTransactions.label.title" = "尚无交易！";
 "wallet.navigation.title" = "更换当前钱包";

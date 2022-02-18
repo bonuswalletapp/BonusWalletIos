@@ -111,6 +111,7 @@
 "settings.section.wallet.title" = "Wallet";
 "settings.change.wallet.title" = "Change / Add Wallet";
 "settings.show.my.wallet.title" = "Show My Wallet Address";
+"settings.kyc.verification.title" = "KYC Verification";
 "suppport.title" = "Support";
 "transactions.noTransactions.label.title" = "No Transactions Yet!";
 "wallet.navigation.title" = "Change / Add Wallet";

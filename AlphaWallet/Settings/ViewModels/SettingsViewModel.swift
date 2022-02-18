@@ -35,12 +35,12 @@ struct SettingsViewModel {
 
         if account.allowBackup {
             if keystore.isHdWallet(wallet: account) {
-                walletRows = [.showMyWallet, .changeWallet, .backup, .showSeedPhrase, .nameWallet, .walletConnect]
+                walletRows = [.kycVerfication, .showMyWallet, .changeWallet, .backup, .showSeedPhrase, .nameWallet, .walletConnect]
             } else {
-                walletRows = [.showMyWallet, .changeWallet, .backup, .nameWallet, .walletConnect]
+                walletRows = [.kycVerfication, .showMyWallet, .changeWallet, .backup, .nameWallet, .walletConnect]
             }
         } else {
-            walletRows = [.showMyWallet, .changeWallet, .nameWallet, .walletConnect]
+            walletRows = [.kycVerfication, .showMyWallet, .changeWallet, .nameWallet, .walletConnect]
         }
 
         sections = [
@@ -71,6 +71,7 @@ struct SettingsViewModel {
 }
 
 enum SettingsWalletRow: CaseIterable {
+    case kycVerfication
     case showMyWallet
     case changeWallet
     case backup
@@ -80,6 +81,8 @@ enum SettingsWalletRow: CaseIterable {
 
     var title: String {
         switch self {
+        case .kycVerfication:
+            return R.string.localizable.settingsKycVerificationTitle()
         case .showMyWallet:
             return R.string.localizable.settingsShowMyWalletTitle()
         case .changeWallet:
@@ -97,6 +100,8 @@ enum SettingsWalletRow: CaseIterable {
 
     var icon: UIImage {
         switch self {
+        case .kycVerfication:
+            return R.image.iconSettingsKyc()!
         case .showMyWallet:
             return R.image.walletAddress()!
         case .changeWallet:

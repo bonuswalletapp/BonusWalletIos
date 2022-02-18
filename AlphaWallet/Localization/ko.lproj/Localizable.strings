@@ -112,6 +112,7 @@
 "settings.show.my.wallet.title" = "Show My Wallet Address";
 "suppport.title" = "Support";
 "transactions.noTransactions.label.title" = "아직 거래가 없습니다!";
+"settings.kyc.verification.title" = "KYC Verification";
 "wallet.navigation.title" = "Change / Add Wallet";
 "wallets.navigation.title" = "Wallets";
 "wallet.types.summary" = "Summary";
