@@ -21,7 +21,7 @@ enum Tabs {
     case wallet
     case alphaWalletSettings
     case transactionsOrActivity
-    case browser
+//    case browser
 
     var className: String {
         switch self {
@@ -35,8 +35,8 @@ enum Tabs {
             }
         case .alphaWalletSettings:
             return String(describing: SettingsViewController.self)
-        case .browser:
-            return String(describing: DappsHomeViewController.self)
+//        case .browser:
+//            return String(describing: DappsHomeViewController.self)
         }
     }
 }
@@ -490,8 +490,9 @@ class InCoordinator: NSObject, Coordinator {
 //        let swapNavigationController = UINavigationController(rootViewController: swapViewController)
 //        swapNavigationController.navigationBar.isTranslucent = false
 //        viewControllers.append(swapNavigationController)
-        let browserCoordinator = createBrowserCoordinator(sessions: walletSessions, browserOnly: false, analyticsCoordinator: analyticsCoordinator)
-        viewControllers.append(browserCoordinator.navigationController)
+        
+//        let browserCoordinator = createBrowserCoordinator(sessions: walletSessions, browserOnly: false, analyticsCoordinator: analyticsCoordinator)
+//        viewControllers.append(browserCoordinator.navigationController)
 
         let settingsCoordinator = createSettingsCoordinator(keystore: keystore, promptBackupCoordinator: promptBackupCoordinator)
         configureNavigationControllerForLargeTitles(settingsCoordinator.navigationController)
@@ -755,7 +756,7 @@ class InCoordinator: NSObject, Coordinator {
                 break
             case .loadUrlInDappBrowser(let url):
                 restartQueue.remove(each)
-                coordinator.showTab(.browser)
+//                coordinator.showTab(.browser)
                 coordinator.dappBrowserCoordinator?.open(url: url, animated: false)
             }
         }
@@ -873,7 +874,7 @@ extension InCoordinator: UrlSchemeResolver {
 
     func openURLInBrowser(url: URL, forceReload: Bool) {
         guard let dappBrowserCoordinator = dappBrowserCoordinator else { return }
-        showTab(.browser)
+//        showTab(.browser)
         dappBrowserCoordinator.open(url: url, animated: true, forceReload: forceReload)
     }
 }
@@ -1006,14 +1007,14 @@ extension InCoordinator: TokensCoordinatorDelegate {
 
     private func open(for url: URL) {
         guard let dappBrowserCoordinator = dappBrowserCoordinator else { return }
-        showTab(.browser)
+//        showTab(.browser)
         dappBrowserCoordinator.open(url: url, animated: true, forceReload: true)
     }
 
     private func open(url: URL, onServer server: RPCServer) {
         //Server shouldn't be disabled since the action is selected
         guard let dappBrowserCoordinator = dappBrowserCoordinator, config.enabledServers.contains(server) else { return }
-        showTab(.browser)
+//        showTab(.browser)
         dappBrowserCoordinator.switch(toServer: server, url: url)
     }
 
