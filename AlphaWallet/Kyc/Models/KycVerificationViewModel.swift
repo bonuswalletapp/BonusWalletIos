@@ -44,13 +44,15 @@ struct KycVerificationViewModel {
         let attributeString = NSMutableAttributedString(string: label)
         let style = NSMutableParagraphStyle()
         style.alignment = .center
-//        style.lineSpacing = ScreenChecker.size(big: 18, medium: 14, small: 7)
+//        style.headIndent = 15
+//        style.tailIndent = 15
+//        style.firstLineHeadIndent = 15
 
         attributeString.addAttributes([
             .paragraphStyle: style,
             .font: Screen.Kyc.font.label,
             .foregroundColor: labelColor,
-            .kern: 0.0
+//            .kern: 0.0
         ], range: NSRange(location: 0, length: label.count))
 
         return attributeString
@@ -59,8 +61,6 @@ struct KycVerificationViewModel {
     var attributedTitle: NSAttributedString {
         let attributeString = NSMutableAttributedString(string: title)
         let style = NSMutableParagraphStyle()
-//        style.alignment = .center
-//        style.lineSpacing = ScreenChecker.size(big: 18, medium: 14, small: 7)
 
         attributeString.addAttributes([
             .paragraphStyle: style,
@@ -75,8 +75,6 @@ struct KycVerificationViewModel {
     var attributedDescription: NSAttributedString {
         let attributedString = NSMutableAttributedString(string: description)
         let style = NSMutableParagraphStyle()
-//        style.alignment = .center
-//        style.lineSpacing = ScreenChecker.size(big: 18, medium: 14, small: 7)
 
         attributedString.addAttributes([
             .paragraphStyle: style,
@@ -85,16 +83,12 @@ struct KycVerificationViewModel {
             .kern: 0.0
         ], range: NSRange(location: 0, length: description.count))
 
-//        attributedString.addAttribute(.font, value: Screen.Backup.descriptionBoldFont, range: NSRange(location: 17, length: 5))
-
         return attributedString
     }
     
     var attributedName: NSAttributedString {
         let attributedString = NSMutableAttributedString(string: name)
         let style = NSMutableParagraphStyle()
-//        style.alignment = .center
-//        style.lineSpacing = ScreenChecker.size(big: 18, medium: 14, small: 7)
 
         attributedString.addAttributes([
             .paragraphStyle: style,
@@ -102,8 +96,6 @@ struct KycVerificationViewModel {
             .foregroundColor: Screen.Kyc.Color.name,
             .kern: 0.0
         ], range: NSRange(location: 0, length: name.count))
-
-//        attributedString.addAttribute(.font, value: Screen.Backup.descriptionBoldFont, range: NSRange(location: 17, length: 5))
 
         return attributedString
     }

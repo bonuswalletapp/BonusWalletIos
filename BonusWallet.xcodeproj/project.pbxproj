@@ -980,6 +980,7 @@
 		CCA4FE381FD428B300749AE4 /* JailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA4FE371FD428B300749AE4 /* JailbreakChecker.swift */; };
 		CCA4FE3A1FD42B4100749AE4 /* FakeJailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA4FE391FD42B4100749AE4 /* FakeJailbreakChecker.swift */; };
 		CCCD74FD1FD2D38D004A087D /* CheckDeviceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCD74FC1FD2D38D004A087D /* CheckDeviceCoordinator.swift */; };
+		F02DFFD827C0FF3F00A3A37D /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02DFFD727C0FF3F00A3A37D /* PaddingLabel.swift */; };
 		F0464F8C27BFDBBA001CD6E6 /* KycVerificationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0464F8B27BFDBBA001CD6E6 /* KycVerificationCoordinator.swift */; };
 		F0464F8F27BFDDE4001CD6E6 /* KycVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0464F8E27BFDDE4001CD6E6 /* KycVerificationViewController.swift */; };
 		F0464F9227BFDE80001CD6E6 /* KycVerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0464F9127BFDE80001CD6E6 /* KycVerificationViewModel.swift */; };
@@ -2020,6 +2021,7 @@
 		D513A661D433865026B560FA /* Pods-AlphaWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlphaWalletTests.debug.xcconfig"; path = "Target Support Files/Pods-AlphaWalletTests/Pods-AlphaWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB5BC1C01A21020E629A603D /* Pods_BonusWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BonusWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA45532ED59EE8BD22A229C /* Pods_AlphaWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlphaWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F02DFFD727C0FF3F00A3A37D /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		F0464F8B27BFDBBA001CD6E6 /* KycVerificationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycVerificationCoordinator.swift; sourceTree = "<group>"; };
 		F0464F8E27BFDDE4001CD6E6 /* KycVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycVerificationViewController.swift; sourceTree = "<group>"; };
 		F0464F9127BFDE80001CD6E6 /* KycVerificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycVerificationViewModel.swift; sourceTree = "<group>"; };
@@ -2277,6 +2279,7 @@
 				5E7C74F1B6944E7BD06DD2C2 /* TokenObject+UI.swift */,
 				5E7C7C67C1FF0BFDDA82C61E /* TokenImageView.swift */,
 				5E7C7D111692DE8ED67D29B7 /* AlphaWalletAddress+UI.swift */,
+				F02DFFD727C0FF3F00A3A37D /* PaddingLabel.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -6087,6 +6090,7 @@
 				5E7C7751F57FE1B8A563A79B /* WalletSecurityLevelIndicator.swift in Sources */,
 				5E7C70CF44075CF73F03AD4B /* TokensViewControllerTableViewHeader.swift in Sources */,
 				5E7C7233A9A5F9D1A89FF569 /* TokensViewControllerTableViewSectionHeader.swift in Sources */,
+				F02DFFD827C0FF3F00A3A37D /* PaddingLabel.swift in Sources */,
 				87C65F532660DD2E00919819 /* WalletBalanceFetcher.swift in Sources */,
 				8739BBCD26CD298B0045CFED /* TokenCardSelectionViewModel.swift in Sources */,
 				5E7C756B31278B71E68D5E10 /* TokensViewControllerCollectiblesCollectionViewHeader.swift in Sources */,

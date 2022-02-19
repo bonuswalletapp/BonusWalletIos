@@ -15,13 +15,14 @@ class KycVerificationViewController: UIViewController {
 
     private let analyticsCoordinator: AnalyticsCoordinator
     
-    private let labelLabel = UILabel()
+    private let labelLabel = UILabel() //PaddingLabel(withInsets: 8, 8, 16, 16)
     private let titleLabel = UILabel()
     private let nameLabel = UILabel()
     private let descriptionLabel = UILabel()
     private let buttonsBar = ButtonsBar(configuration: .green(buttons: 1))
     private let container = UIView()
     private let contentView = UIView()
+    private let labelView = UIView()
 
     weak var delegate: KycVerificationViewControllerDelegate?
 
@@ -32,7 +33,7 @@ class KycVerificationViewController: UIViewController {
 
         hidesBottomBarWhenPushed = true
         
-//        let footerBar = ButtonsBarBackgroundView(buttonsBar: buttonsBar, separatorHeight: 0.0)
+        navigationItem.title = R.string.localizable.settingsKycVerificationTitle()
 
         let stackView = [
             labelLabel,
@@ -52,6 +53,11 @@ class KycVerificationViewController: UIViewController {
         contentStackView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(contentStackView)
         contentView.cornerRadius = 5
+        contentView.translatesAutoresizingMaskIntoConstraints = false
+        
+//        labelView.addSubview(labelLabel)
+//        labelView.translatesAutoresizingMaskIntoConstraints = false
+//        labelView.cornerRadius = 5
 
         container.translatesAutoresizingMaskIntoConstraints = false
         container.cornerRadius = 12
@@ -77,7 +83,11 @@ class KycVerificationViewController: UIViewController {
             container.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             container.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
             
-//            footerBar.anchorsConstraint(to: view)
+//            labelLabel.leadingAnchor.constraint(equalTo: labelView.leadingAnchor, constant: 12),
+//            labelLabel.trailingAnchor.constraint(equalTo: labelView.trailingAnchor, constant: -12),
+//            labelLabel.topAnchor.constraint(equalTo: labelView.topAnchor, constant: 5),
+//            labelLabel.bottomAnchor.constraint(equalTo: labelView.bottomAnchor, constant: -5),
+            
         ])
     }
 
@@ -103,9 +113,14 @@ class KycVerificationViewController: UIViewController {
         container.backgroundColor = viewModel.backgroundColor
         
         contentView.backgroundColor = viewModel.bgColor
+//        labelView.backgroundColor = viewModel.bgColor
         
         labelLabel.numberOfLines = 0
         labelLabel.attributedText = viewModel.attributedLabel
+        labelLabel.backgroundColor = viewModel.bgColor
+        labelLabel.layer.cornerRadius = 5
+        labelLabel.clipsToBounds = true
+//        labelLabel.sizeToFit()
         
         nameLabel.numberOfLines = 0
         nameLabel.attributedText = viewModel.attributedName
