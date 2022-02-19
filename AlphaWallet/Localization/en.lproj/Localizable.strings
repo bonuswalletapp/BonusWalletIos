@@ -716,3 +716,17 @@
 "walletConnect.error.connectionTimeout.errorMessage" = "You tried to connect with WalletConnect.\nWell.. It takes too long. Please generate\na fresh QR code and try again.";
 "walletConnect.scanQRCodeAgain" = "Scan QR Code again";
 "browser.button.swap.intialTitle" = "Enter an amount";
+"kyc.status.unverified.label" = "Unverified";
+"kyc.status.verified.label" = "Verified";
+"kyc.status.pending.label" = "Verification Pending";
+"kyc.status.declined.label" = "Declined";
+"kyc.status.unverified.title" = "You haven't verify your KYC";
+"kyc.status.verified.title" = "Account verified";
+"kyc.status.pending.title" = "KYC verification in progress";
+"kyc.status.declined.title" = "We have a problem with your verification";
+"kyc.status.unverified.description" = "Please Proceed To Verify Your Identity.";
+"kyc.status.verified.description" = "You Can Now Make Deposits, Withdrawals, And Use P2P.";
+"kyc.status.pending.description" = "Please Wait While We Verify Your Identity.";
+"kyc.status.declined.description" = "Please Update Your Information";
+"kyc.start.action.title" = "Start Verification";
+"kyc.resubmit.action.title" = "Resubmit";

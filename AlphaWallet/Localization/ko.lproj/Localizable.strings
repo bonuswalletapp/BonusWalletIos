@@ -137,6 +137,7 @@
 "wallets.showSeedPhrase.hideSeedPhrase" = "OK, hide my seed phrase";
 "wallets.showSeedPhrase.title" = "Your Seed Phrase";
 "wallets.showSeedPhrase.subtitle" = "Please write down your 12-word\nBackup Phrase and keep a\ncopy in secure location so you can\n restore your wallet at anytime.";
+"wallets.showSeedPhrase.desc" = "Making backup is very simple and safe:\n just write down 12 words and keep them in a secret place, offline.";
 "wallets.showSeedPhrase.testSeedPhrase" = "OK, I wrote this down";
 "wallets.showSeedPhrase.doNotTakeScreenshotDescription" = "It's not a good idea to take a screenshot of your seed phrase";
 "wallets.verifySeedPhrase.title" = "Your 12-word Backup Phrase\ngive a direct access to\nyour account. Do not this\ninformation to anyone";
@@ -715,3 +716,17 @@
 "walletConnect.error.connectionTimeout.errorMessage" = "You tried to connect with WalletConnect.\nWell.. It takes too long. Please generate\na fresh QR code and try again.";
 "walletConnect.scanQRCodeAgain" = "Scan QR Code again";
 "browser.button.swap.intialTitle" = "Enter an amount";
+"kyc.status.unverified.label" = "Unverified";
+"kyc.status.verified.label" = "Verified";
+"kyc.status.pending.label" = "Verification Pending";
+"kyc.status.declined.label" = "Declined";
+"kyc.status.unverified.title" = "You haven't verify your KYC";
+"kyc.status.verified.title" = "Account verified";
+"kyc.status.pending.title" = "KYC verification in progress";
+"kyc.status.declined.title" = "We have a problem with your verification";
+"kyc.status.unverified.description" = "Please Proceed To Verify Your Identity.";
+"kyc.status.verified.description" = "You Can Now Make Deposits, Withdrawals, And Use P2P.";
+"kyc.status.pending.description" = "Please Wait While We Verify Your Identity.";
+"kyc.status.declined.description" = "Please Update Your Information";
+"kyc.start.action.title" = "Start Verification";
+"kyc.resubmit.action.title" = "Resubmit";

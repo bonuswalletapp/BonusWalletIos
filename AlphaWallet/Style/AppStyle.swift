@@ -387,4 +387,31 @@ enum Screen {
             return .init(top: 0, left: leftRightInset, bottom: topBottomInset, right: leftRightInset)
         }
     }
+    enum Kyc {
+        enum Color {
+            static let name = UIColor(hex: "131B6A")
+            static let unverifiedBg = UIColor(hex: "F8D7DA")
+            static let unverifiedLabel = UIColor(hex: "721C24")
+            static let unverifiedTitle = UIColor(hex: "721C24")
+            static let unverifiedDescription = UIColor(hex: "856404")
+            static let pendingBg = UIColor(hex: "FFF3CD")
+            static let pendingLabel = UIColor(hex: "856404")
+            static let pendingTitle = UIColor(hex: "FFC107")
+            static let pendingDescription = UIColor(hex: "856404")
+            static let declinedBg = UIColor(hex: "F8D7DA")
+            static let declinedLabel = UIColor(hex: "721C24")
+            static let declinedTitle = UIColor(hex: "721C24")
+            static let declinedDescription = UIColor(hex: "856404")
+            static let verifiedBg = UIColor(hex: "D4EDDA")
+            static let verifiedLabel = UIColor(hex: "155724")
+            static let verifiedTitle = UIColor(hex: "28A745")
+            static let verifiedDescription = UIColor(hex: "155724")
+        }
+        enum font {
+            static let name = Fonts.bold(size: 18)
+            static let label = Fonts.regular(size: 10)
+            static let title = Fonts.semibold(size: 12)
+            static let description = label
+        }
+    }
 }

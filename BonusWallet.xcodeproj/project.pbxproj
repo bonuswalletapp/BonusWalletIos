@@ -980,6 +980,9 @@
 		CCA4FE381FD428B300749AE4 /* JailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA4FE371FD428B300749AE4 /* JailbreakChecker.swift */; };
 		CCA4FE3A1FD42B4100749AE4 /* FakeJailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA4FE391FD42B4100749AE4 /* FakeJailbreakChecker.swift */; };
 		CCCD74FD1FD2D38D004A087D /* CheckDeviceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCD74FC1FD2D38D004A087D /* CheckDeviceCoordinator.swift */; };
+		F0464F8C27BFDBBA001CD6E6 /* KycVerificationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0464F8B27BFDBBA001CD6E6 /* KycVerificationCoordinator.swift */; };
+		F0464F8F27BFDDE4001CD6E6 /* KycVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0464F8E27BFDDE4001CD6E6 /* KycVerificationViewController.swift */; };
+		F0464F9227BFDE80001CD6E6 /* KycVerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0464F9127BFDE80001CD6E6 /* KycVerificationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2017,6 +2020,9 @@
 		D513A661D433865026B560FA /* Pods-AlphaWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlphaWalletTests.debug.xcconfig"; path = "Target Support Files/Pods-AlphaWalletTests/Pods-AlphaWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB5BC1C01A21020E629A603D /* Pods_BonusWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BonusWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA45532ED59EE8BD22A229C /* Pods_AlphaWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlphaWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0464F8B27BFDBBA001CD6E6 /* KycVerificationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycVerificationCoordinator.swift; sourceTree = "<group>"; };
+		F0464F8E27BFDDE4001CD6E6 /* KycVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycVerificationViewController.swift; sourceTree = "<group>"; };
+		F0464F9127BFDE80001CD6E6 /* KycVerificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycVerificationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2100,6 +2106,7 @@
 		2912CCF71F6A830700C6CBE3 /* AlphaWallet */ = {
 			isa = PBXGroup;
 			children = (
+				F0464F8927BFDAFE001CD6E6 /* Kyc */,
 				5F7D15082757A8D30054D7DF /* Swap */,
 				8712A37A26F314EF0009C376 /* Alerts */,
 				87BBF9682563DD7500FF4846 /* WalletConnect */,
@@ -4869,6 +4876,40 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		F0464F8927BFDAFE001CD6E6 /* Kyc */ = {
+			isa = PBXGroup;
+			children = (
+				F0464F9027BFDE5E001CD6E6 /* Models */,
+				F0464F8D27BFDDC0001CD6E6 /* ViewControllers */,
+				F0464F8A27BFDB85001CD6E6 /* Coordinators */,
+			);
+			path = Kyc;
+			sourceTree = "<group>";
+		};
+		F0464F8A27BFDB85001CD6E6 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F0464F8B27BFDBBA001CD6E6 /* KycVerificationCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F0464F8D27BFDDC0001CD6E6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F0464F8E27BFDDE4001CD6E6 /* KycVerificationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F0464F9027BFDE5E001CD6E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F0464F9127BFDE80001CD6E6 /* KycVerificationViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -5599,6 +5640,7 @@
 				442FC58B7558F28F9452D383 /* GetIsERC875ContractCoordinator.swift in Sources */,
 				442FC65BFA2D42879648EC06 /* Int.swift in Sources */,
 				442FC249C2A39F85BDBD7987 /* GetDecimalsCoordinator.swift in Sources */,
+				F0464F8C27BFDBBA001CD6E6 /* KycVerificationCoordinator.swift in Sources */,
 				76F1D5AF727A83205BBCF0EC /* OrderHandler.swift in Sources */,
 				442FCD76B5C25C9FB7FE7479 /* TokensCardViewModel.swift in Sources */,
 				87C237DE26DE5389003CA387 /* SelectAssetAmountView.swift in Sources */,
@@ -5908,6 +5950,7 @@
 				87ED8F93248534E30005C69B /* SwitchTableViewCell.swift in Sources */,
 				5E7C749615D227B91E40B274 /* TokenViewControllerHeaderView.swift in Sources */,
 				5E7C72EECA8154CEB7D9F46C /* ContainerViewWithShadow.swift in Sources */,
+				F0464F8F27BFDDE4001CD6E6 /* KycVerificationViewController.swift in Sources */,
 				5E7C7A9628548EB8AB8B7A26 /* TokenCollection.swift in Sources */,
 				87D949BD2710559700A96A85 /* DASNameLookupCoordinator.swift in Sources */,
 				878EE951255BEC20000210DE /* ItemType.swift in Sources */,
@@ -6006,6 +6049,7 @@
 				5E7C75F1B2340BB6AA86A2EE /* ShowSeedPhraseViewModel.swift in Sources */,
 				5E7C7A4700C79350AA486E09 /* SeedPhraseCell.swift in Sources */,
 				5E7C767848E46E079557A039 /* SeedPhraseCellViewModel.swift in Sources */,
+				F0464F9227BFDE80001CD6E6 /* KycVerificationViewModel.swift in Sources */,
 				5E7C7BAF922C3EB4D1B22C46 /* VerifySeedPhraseViewController.swift in Sources */,
 				C601B18A24407D3B00C763D9 /* SettingTableViewCell.swift in Sources */,
 				87A3020924BEE243000DF32E /* TransactionInProgressViewController.swift in Sources */,

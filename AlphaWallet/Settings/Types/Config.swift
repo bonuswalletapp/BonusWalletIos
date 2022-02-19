@@ -156,6 +156,8 @@ struct Config {
         static let usePrivateNetwork = "usePrivateNetworkKey"
         static let customRpcServers = "customRpcServers"
         static let homePageURL = "homePageURL"
+        static let nameKyc = "nameKyc"
+        static let kycStatus = "kycStatus"
     }
 
     let defaults: UserDefaults
@@ -171,6 +173,24 @@ struct Config {
             guard Features.isUsingPrivateNetwork else { return }
 
             defaults.set(newValue, forKey: Keys.usePrivateNetwork)
+        }
+    }
+    
+    var nameKyc: String? {
+        get {
+            return defaults.string(forKey: Keys.nameKyc)
+        }
+        set {
+            defaults.set(newValue, forKey: Keys.nameKyc)
+        }
+    }
+    
+    var kycStatus: String? {
+        get {
+            return defaults.string(forKey: Keys.kycStatus) ?? "unverified"
+        }
+        set {
+            defaults.set(newValue, forKey: Keys.kycStatus)
         }
     }
 
