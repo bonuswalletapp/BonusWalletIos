@@ -65,6 +65,7 @@ enum ButtonsBarButtonType {
     case green
     case white
     case system
+    case systemBorder
 }
 
 class BarButton: TransitionButton {
@@ -289,6 +290,8 @@ class ButtonsBar: UIView, ButtonsBarViewType {
                 setup(viewModel: .whiteButton, view: combined.1)
             case .system:
                 setup(viewModel: .systemButton, view: combined.1)
+            case .systemBorder:
+                setup(viewModel: .systemBorderButton, view: combined.1)
             }
         }
 
@@ -367,14 +370,18 @@ struct ButtonsBarViewModel {
     )
 
     static let systemButton = ButtonsBarViewModel(
-        buttonBackgroundColor: Colors.appWhite,
-        highlightedButtonBackgroundColor: Colors.appWhite,
-        disabledButtonBackgroundColor: Colors.appWhite,
-        disabledButtonBorderColor: Colors.appWhite,
-        highlightedButtonTitleColor: Colors.appActionButtonGreen,
-        disabledButtonTitleColor: Colors.appActionButtonGreen,
+        buttonBackgroundColor: Colors.navigationColor,
+        buttonTitleColor: Colors.appWhite,
         buttonFont: Fonts.regular(size: ScreenChecker().isNarrowScreen ? 16 : 20),
         buttonBorderWidth: 0.0
+    )
+    
+    static let systemBorderButton = ButtonsBarViewModel(
+        buttonBackgroundColor: .clear,
+        buttonTitleColor: Colors.navigationColor,
+        buttonFont: Fonts.regular(size: ScreenChecker().isNarrowScreen ? 16 : 20),
+        buttonBorderColor: Colors.navigationColor,
+        buttonBorderWidth: 1
     )
 
     static let moreButton = ButtonsBarViewModel()
