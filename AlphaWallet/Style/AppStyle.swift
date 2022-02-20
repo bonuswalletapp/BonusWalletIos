@@ -237,7 +237,7 @@ enum DataEntry {
         static let textFieldShadowWhileEditing = Colors.appTint
         static let textFieldBackground = UIColor(hex: "FBFBFB")
         static let placeholder = UIColor(hex: "919191")
-        static let pasteColor = UIColor(hex: "4c79cb")
+        static let pasteColor = UIColor(hex: "44D5A3")
         static let ensText = UIColor(red: 117, green: 185, blue: 67)
         static let searchTextFieldBackground = UIColor(red: 243, green: 244, blue: 245)
     }
