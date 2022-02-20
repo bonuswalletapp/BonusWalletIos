@@ -730,3 +730,4 @@
 "kyc.status.declined.description" = "Please Update Your Information";
 "kyc.start.action.title" = "Start Verification";
 "kyc.resubmit.action.title" = "Resubmit";
+"recipient.address" = "Recipient's Address";

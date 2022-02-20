@@ -251,7 +251,7 @@ class AddressTextField: UIControl {
         textField.rightView = makeTargetAddressRightView()
         textField.layer.borderColor = DataEntry.Color.border.cgColor
         textField.layer.borderWidth = DataEntry.Metric.borderThickness
-        textField.placeholder = R.string.localizable.contractAddress()
+        textField.placeholder = R.string.localizable.recipientAddress()
         textField.autocapitalizationType = .none
         textField.autocorrectionType = .no
 
