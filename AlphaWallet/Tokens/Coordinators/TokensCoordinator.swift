@@ -475,6 +475,10 @@ extension TokensCoordinator: CanOpenURL {
 }
 
 extension TokensCoordinator: PromptBackupCoordinatorProminentPromptDelegate {
+    func openWebPage(_ url: URL) {
+        didPressOpenWebPage(url, in: tokensViewController)
+    }
+    
     var viewControllerToShowBackupLaterAlert: UIViewController {
         return tokensViewController
     }
