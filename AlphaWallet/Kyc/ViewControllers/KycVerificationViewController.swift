@@ -22,7 +22,7 @@ class KycVerificationViewController: UIViewController {
     private let buttonsBar = ButtonsBar(configuration: .green(buttons: 1))
     private let container = UIView()
     private let contentView = UIView()
-    private let labelView = UIView()
+    private var labelView = UIView()
 
     weak var delegate: KycVerificationViewControllerDelegate?
 
@@ -56,8 +56,9 @@ class KycVerificationViewController: UIViewController {
         contentView.translatesAutoresizingMaskIntoConstraints = false
         
 //        labelView.addSubview(labelLabel)
-//        labelView.translatesAutoresizingMaskIntoConstraints = false
-//        labelView.cornerRadius = 5
+        labelView.translatesAutoresizingMaskIntoConstraints = false
+        labelView.cornerRadius = 5
+        container.addSubview(labelView)
 
         container.translatesAutoresizingMaskIntoConstraints = false
         container.cornerRadius = 12
@@ -113,14 +114,17 @@ class KycVerificationViewController: UIViewController {
         container.backgroundColor = viewModel.backgroundColor
         
         contentView.backgroundColor = viewModel.bgColor
-//        labelView.backgroundColor = viewModel.bgColor
         
         labelLabel.numberOfLines = 0
         labelLabel.attributedText = viewModel.attributedLabel
-        labelLabel.backgroundColor = viewModel.bgColor
-        labelLabel.layer.cornerRadius = 5
         labelLabel.clipsToBounds = true
-//        labelLabel.sizeToFit()
+        labelLabel.sizeToFit()
+        
+        let rect: CGRect = labelLabel.textRect(forBounds: labelLabel.bounds, limitedToNumberOfLines: 1)
+        let labeViewRect = CGRect(x: self.view.frame.midX - rect.midX - 30, y: 30, width: rect.width + 25, height: rect.height + 5)
+        labelView.frame = labeViewRect
+        labelView.backgroundColor = viewModel.bgColor
+        labelView.cornerRadius = 10
         
         nameLabel.numberOfLines = 0
         nameLabel.attributedText = viewModel.attributedName
