@@ -46,7 +46,7 @@ class SettingsViewController: UIViewController {
         didSet {
             oldValue?.removeFromSuperview()
             if let promptBackupWalletView = promptBackupWalletView {
-//                promptBackupWalletView.translatesAutoresizingMaskIntoConstraints = false
+                promptBackupWalletView.translatesAutoresizingMaskIntoConstraints = false
                 promptBackupWalletViewHolder.addSubview(promptBackupWalletView)
                 NSLayoutConstraint.activate([
                     promptBackupWalletView.leadingAnchor.constraint(equalTo: promptBackupWalletViewHolder.leadingAnchor, constant: 7),

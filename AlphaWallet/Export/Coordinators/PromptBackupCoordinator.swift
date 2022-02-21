@@ -124,28 +124,32 @@ class PromptBackupCoordinator: Coordinator {
     private func createBackupAfterWalletCreationView() {
         let view = createBackupViewImpl(viewModel: PromptBackupWalletAfterWalletCreationViewViewModel(walletAddress: wallet.address))
         prominentPromptView = view
-        subtlePromptView = view
+        let view1 = createBackupViewImpl(viewModel: PromptBackupWalletAfterWalletCreationViewViewModel(walletAddress: wallet.address))
+        subtlePromptView = view1
         informDelegatesPromptHasChanged()
     }
 
     private func createBackupAfterReceiveNativeCryptoCurrencyView(nativeCryptoCurrency: BigInt) {
         let view = createBackupViewImpl(viewModel: PromptBackupWalletAfterReceivingNativeCryptoCurrencyViewViewModel(walletAddress: wallet.address, nativeCryptoCurrency: nativeCryptoCurrency))
         prominentPromptView = view
-        subtlePromptView = nil
+        let view1 = createBackupViewImpl(viewModel: PromptBackupWalletAfterWalletCreationViewViewModel(walletAddress: wallet.address))
+        subtlePromptView = view1
         informDelegatesPromptHasChanged()
     }
 
     private func createBackupAfterIntervalView() {
         let view = createBackupViewImpl(viewModel: PromptBackupWalletAfterIntervalViewViewModel(walletAddress: wallet.address))
         prominentPromptView = view
-        subtlePromptView = nil
+        let view1 = createBackupViewImpl(viewModel: PromptBackupWalletAfterWalletCreationViewViewModel(walletAddress: wallet.address))
+        subtlePromptView = view1
         informDelegatesPromptHasChanged()
     }
 
     private func createBackupAfterExceedingThresholdView() {
         let view = createBackupViewImpl(viewModel: PromptBackupWalletAfterExceedingThresholdViewViewModel(walletAddress: wallet.address, dollarValueInUsd: nativeCryptoCurrencyDollarValueInUsd))
         prominentPromptView = view
-        subtlePromptView = nil
+        let view1 = createBackupViewImpl(viewModel: PromptBackupWalletAfterWalletCreationViewViewModel(walletAddress: wallet.address))
+        subtlePromptView = view1
         informDelegatesPromptHasChanged()
     }
 
