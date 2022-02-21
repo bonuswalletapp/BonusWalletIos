@@ -28,7 +28,7 @@ class PromptBackupWalletView: UIView {
         remindMeLaterButton.addTarget(self, action: #selector(remindMeLater), for: .touchUpInside)
         remindMeLaterButton.setContentHuggingPriority(.required, for: .horizontal)
 
-        let row0 = [titleLabel, remindMeLaterButton].asStackView(axis: .horizontal, spacing: 20, alignment: .top)
+        let row0 = [titleLabel].asStackView(axis: .horizontal, spacing: 20, alignment: .top)
         let stackView = [
             row0,
             UIView.spacer(height: 10),
