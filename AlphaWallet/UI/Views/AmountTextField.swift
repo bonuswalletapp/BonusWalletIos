@@ -257,7 +257,7 @@ class AmountTextField: UIControl {
         case .cryptoCurrency:
             if useFormatting {
                 textField.text = formatValueToDisplayValue(ethCostRawValue)
-            } else if let shortEthCost = shortEthCost, shortEthCost.optionalDecimalValue != 0 {
+            } else if let shortEthCost = shortEthCost {
                 textField.text = shortEthCost
             } else {
                 textField.text = ethCost
