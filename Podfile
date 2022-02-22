@@ -43,6 +43,9 @@ target 'BonusWallet' do
   pod 'AlphaWalletAddress', :path => 'modules/AlphaWalletAddress'
   pod 'Apollo'
   
+  # KYC verification
+  pod 'VeriffSDK'
+  
   target 'AlphaWalletTests' do
       inherit! :search_paths
       # Pods for testing
