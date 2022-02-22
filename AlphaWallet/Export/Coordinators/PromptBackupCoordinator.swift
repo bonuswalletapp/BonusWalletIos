@@ -8,7 +8,7 @@ protocol PromptBackupCoordinatorProminentPromptDelegate: AnyObject {
     var viewControllerToShowBackupLaterAlert: UIViewController { get }
 
     func updatePrompt(inCoordinator coordinator: PromptBackupCoordinator)
-    func openWebPage(_ url: URL)
+    func startVerification(_ url: URL)
 }
 
 protocol PromptBackupCoordinatorSubtlePromptDelegate: AnyObject {
@@ -384,7 +384,7 @@ extension PromptBackupCoordinator: PromptBackupWalletViewDelegate {
 //        coordinator.delegate = self
 //        coordinator.start()
 //        addCoordinator(coordinator)
-        prominentPromptDelegate?.openWebPage(URL(string: "https://beta.jax.money/")!)
+        prominentPromptDelegate?.startVerification(URL(string: "https://beta.jax.money/")!)
     }
 }
 

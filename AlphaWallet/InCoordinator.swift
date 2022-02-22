@@ -1004,6 +1004,10 @@ extension InCoordinator: TokensCoordinatorDelegate {
             break
         }
     }
+    
+    func shouldOpenWeb(url: URL, in coordinator: TokensCoordinator) {
+        open(for: url)
+    }
 
     private func open(for url: URL) {
         guard let dappBrowserCoordinator = dappBrowserCoordinator else { return }

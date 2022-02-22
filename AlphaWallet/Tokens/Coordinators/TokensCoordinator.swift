@@ -7,6 +7,7 @@ import PromiseKit
 protocol TokensCoordinatorDelegate: class, CanOpenURL {
     func didTapSwap(forTransactionType transactionType: TransactionType, service: SwapTokenURLProviderType, in coordinator: TokensCoordinator)
     func shouldOpen(url: URL, shouldSwitchServer: Bool, forTransactionType transactionType: TransactionType, in coordinator: TokensCoordinator)
+    func shouldOpenWeb(url: URL, in coordinator: TokensCoordinator)
     func didPress(for type: PaymentFlow, server: RPCServer, inViewController viewController: UIViewController?, in coordinator: TokensCoordinator)
     func didTap(transaction: TransactionInstance, inViewController viewController: UIViewController, in coordinator: TokensCoordinator)
     func didTap(activity: Activity, inViewController viewController: UIViewController, in coordinator: TokensCoordinator)
@@ -475,8 +476,9 @@ extension TokensCoordinator: CanOpenURL {
 }
 
 extension TokensCoordinator: PromptBackupCoordinatorProminentPromptDelegate {
-    func openWebPage(_ url: URL) {
-        didPressOpenWebPage(url, in: tokensViewController)
+    func startVerification(_ url: URL) {
+//        didPressOpenWebPage(url, in: tokensViewController)
+        delegate?.shouldOpenWeb(url: url, in: self)
     }
     
     var viewControllerToShowBackupLaterAlert: UIViewController {
