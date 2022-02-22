@@ -3,6 +3,7 @@
 import Foundation
 import UIKit
 import PromiseKit
+import Veriff
 
 protocol TokensCoordinatorDelegate: class, CanOpenURL {
     func didTapSwap(forTransactionType transactionType: TransactionType, service: SwapTokenURLProviderType, in coordinator: TokensCoordinator)
@@ -476,7 +477,11 @@ extension TokensCoordinator: CanOpenURL {
 
 extension TokensCoordinator: PromptBackupCoordinatorProminentPromptDelegate {
     func openWebPage(_ url: URL) {
-        didPressOpenWebPage(url, in: tokensViewController)
+//        didPressOpenWebPage(url, in: tokensViewController)
+        let veriff = VeriffSdk.shared
+//        let configuration = VeriffSdk.Configuration(branding: branding, languageLocale: config.getLocale())
+        veriff.startAuthentication(sessionUrl: "https://alchemy.veriff.com/v/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2lkIjoiY2NjY2Q0NzAtZjYzZS00MzZmLTlmNzEtNzU2ZDM0OTc2YjFhIiwiaWF0IjoxNjQzNjE5NTAwfQ.JQ9EmOz49XCu_H-i7we1lp7k6YlaJBFnuGmRSl3Z61I", presentingFrom: tokensViewController)
+        veriff.delegate = self
     }
     
     var viewControllerToShowBackupLaterAlert: UIViewController {
@@ -491,5 +496,25 @@ extension TokensCoordinator: PromptBackupCoordinatorProminentPromptDelegate {
 extension TokensCoordinator: AddHideTokensCoordinatorDelegate {
     func didClose(coordinator: AddHideTokensCoordinator) {
         removeCoordinator(coordinator)
+    }
+}
+
+extension TokensCoordinator: VeriffSdkDelegate {
+    func sessionDidEndWithResult(_ result: VeriffSdk.Result) {
+        switch result.status {
+        case .done:
+            // The user successfully submitted the session
+            break
+        case .canceled:
+            // The user canceled the verification process.
+            break
+        case .error(let error):
+            switch error {
+                // ...
+            default:
+                break
+                
+            }
+        }
     }
 }
