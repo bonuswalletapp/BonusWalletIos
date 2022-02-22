@@ -100,6 +100,8 @@
 	<string>Sending QR Code to your contacts</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Sending QR Code to your contacts</string>
+	<key>NFCReaderUsageDescription</key>
+	<string>$(ALPHAWALLET_PRODUCT_NAME) might capture audio if a website needs to perform KYC (with your permission)</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>SourceSansPro-Black.otf</string>
