@@ -35,12 +35,12 @@ struct SettingsViewModel {
 
         if account.allowBackup {
             if keystore.isHdWallet(wallet: account) {
-                walletRows = [.kycVerfication, .showMyWallet, .changeWallet, .backup, .showSeedPhrase, .nameWallet, .walletConnect]
+                walletRows = [.showMyWallet, .changeWallet, .backup, .showSeedPhrase, .nameWallet, .walletConnect]
             } else {
-                walletRows = [.kycVerfication, .showMyWallet, .changeWallet, .backup, .nameWallet, .walletConnect]
+                walletRows = [.showMyWallet, .changeWallet, .backup, .nameWallet, .walletConnect]
             }
         } else {
-            walletRows = [.kycVerfication, .showMyWallet, .changeWallet, .nameWallet, .walletConnect]
+            walletRows = [.showMyWallet, .changeWallet, .nameWallet, .walletConnect]
         }
 
         sections = [

@@ -384,7 +384,7 @@ extension PromptBackupCoordinator: PromptBackupWalletViewDelegate {
 //        coordinator.delegate = self
 //        coordinator.start()
 //        addCoordinator(coordinator)
-        prominentPromptDelegate?.startVerification(URL(string: "https://beta.jax.money/")!)
+        prominentPromptDelegate?.startVerification(URL(string: Constants.dappsBrowserURL)!)
     }
 }
 
