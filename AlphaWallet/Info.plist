@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Bonus Wallet</string>
+	<string>UBI Wallet</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
