@@ -1,5 +1,5 @@
 "Advanced" = "Advanced";
-"app.device.jailbreak.description" = "Any 'jailbreak' app can access JaxWallet's keychain data and steal your wallet! Wipe this wallet immediately and restore on a secure device.";
+"app.device.jailbreak.description" = "Any 'jailbreak' app can access Jax UBI's keychain data and steal your wallet! Wipe this wallet immediately and restore on a secure device.";
 "app.device.jailbreak.title" = "DEVICE SECURITY COMPROMISED";
 "Done" = "Done";
 "Cancel" = "Cancel";
@@ -133,7 +133,7 @@
 "wallets.backupHdWallet.introduction.title" = "Back up your Wallet\nwith Seed Phrase";
 "wallets.showSeedPhrase.introduction.button.title" = "Got it, show my seed phrase";
 "wallets.showSeedPhrase.introduction.title" = "Beware of scammers!\nDon’t share seed phrase.";
-"wallets.showSeedPhrase.introduction.subtitle" = "JaxWallet will NEVER ask about your\nseed phrase (especially on Telegram).";
+"wallets.showSeedPhrase.introduction.subtitle" = "Jax UBI will NEVER ask about your\nseed phrase (especially on Telegram).";
 "wallets.showSeedPhrase.subtitle2" = "Your seed phrase\n(do not share with anyone)";
 "wallets.showSeedPhrase.hideSeedPhrase" = "OK, hide my seed phrase";
 "wallets.showSeedPhrase.title" = "Your Seed Phrase";
@@ -223,7 +223,7 @@
 "welldone.description.label.text" = "Help us grow by sharing this app with your friends!";
 "welldone.navigation.title" = "Thank you!";
 "welldone.share.label.text" = "Share";
-"welldone.viewmodel.sharing.text" = "Check out JaxWallet - The first crypto mobile wallet which can interact with smart contracts to perform real-world use cases.";
+"welldone.viewmodel.sharing.text" = "Check out Jax UBI - The first crypto mobile wallet which can interact with smart contracts to perform real-world use cases.";
 "browser.home.button.title" = "Home";
 "browser.reload.button.title" = "Reload";
 "browser.addbookmark.button.title" = "Add to My Bookmarks";
@@ -339,7 +339,7 @@
 "a.help.assetDefinitionOverrides.title" = "TokenScript Overrides";
 "a.console.title" = "Console";
 "a.help.contact.footer.button.title" = "Still need help? Contact Us";
-"a.help.contact.email.subject" = "Help/Feedback for JaxWallet";
+"a.help.contact.email.subject" = "Help/Feedback for Jax UBI";
 "a.help.contact.email.helpfulToDevelopers" = "Helpful information to developers:";
 "a.help.contact.email.iosVersion" = "iOS Version: %@";
 "a.help.contact.email.deviceModel" = "Device Model: %@";
@@ -458,7 +458,7 @@
 "photos" = "Browse";
 "light" = "Light";
 "qrCode.title" = "Point your camera on QR code";
-"tokenScript.notSupportedSchema.error" = "Please upgrade JaxWallet to support this TokenScript file";
+"tokenScript.notSupportedSchema.error" = "Please upgrade Jax UBI to support this TokenScript file";
 "tokenScript.moveFile.error" = "Error moving asset definition file from %@ to: %@: %@";
 "TokenScript.verifying" = "Verifying...";
 "TokenScript.showErrors" = "Show errors";
@@ -467,10 +467,10 @@
 "TokenScript.type2.conflictingFiles" = "Conflicting TokenScript Files";
 "TokenScript.type2.oldSchemaVersion" = "Old TokenScript Version";
 "TokenScript.type2.invalidSignature" = "Invalid Signature";
-"gettingStarted.subtitle" = "Welcome to JaxWallet";
+"gettingStarted.subtitle" = "Welcome to Jax UBI";
 "gettingStarted.newWallet" = "CREATE A NEW WALLET";
 "gettingStarted.alreadyHaveWallet" = "I already have a wallet:";
-"backup.prompt.title" = "Claim your free 1000 JRUPPEE by verifying KYC";
+"backup.prompt.title" = "Receive a 1000 JAX Rupee bonus after completing a simple ID verification";
 "backup.prompt.description.withAmount" = "You have not backed up your wallet yet. You have %@ USD net. Act now.";
 "backup.prompt.backupButton.title" = "Start verification";
 "backup.prompt.backup.remindLater" = "Remind me to back up later?";
@@ -494,14 +494,14 @@
 "keystore.accessKey.nonHd.lock" = "To lock your private key to increase security";
 "keystore.lock.wallet.seed.title" = "Lock your Seed Phrase to Increase Security";
 "keystore.lock.wallet.privateKey.title" = "Lock your Private Key to Increase Security";
-"keystore.lock.wallet.seed.description" = "JaxWallet security is being upgraded to the best achievable. Lock your seed phrase with biometrics";
-"keystore.lock.wallet.privateKey.description" = "JaxWallet security is being upgraded to the best achievable. Lock your private key with biometrics";
+"keystore.lock.wallet.seed.description" = "Jax UBI security is being upgraded to the best achievable. Lock your seed phrase with biometrics";
+"keystore.lock.wallet.privateKey.description" = "Jax UBI security is being upgraded to the best achievable. Lock your private key with biometrics";
 "keystore.lock.wallet.seed.button" = "Lock Seed Phrase";
 "keystore.lock.wallet.privateKey.button" = "Lock Private Key";
 "wallet.security.level.red" = "BACK UP NOW!";
 "wallet.security.level.orange" = "NOT LOCKED";
 "wallet.security.level.green" = "100% SECURE";
-"wallets.showSeedPhrase.subtitle.error" = "Do not share your backup. JaxWallet team members will not ask for it.";
+"wallets.showSeedPhrase.subtitle.error" = "Do not share your backup. Jax UBI team members will not ask for it.";
 "token.transactionConfirmation.gas.title" = "Speed (Gas)";
 "token.transactionConfirmation.contract.title" = "Contract";
 "token.transactionConfirmation.function.title" = "Function";
@@ -519,9 +519,9 @@
 "token.transactionConfirmation.error.title.gasLimitTooHigh" = "Gas Limit is too high";
 "token.transactionConfirmation.error.description.insufficientFundsError" = "Every transaction requires a small amount of %@ (%@) to pay for the fees. You can receive %@ from a different wallet, crypto exchange. You can get the wallet address using the button below.";
 "token.transactionConfirmation.error.description.nonceTooLowError" = "The nonce is the total number of transactions which has been sent from this wallet so far, and is included for security purposes. \nWe recommend to leave the nonce empty. \nWe'll fill it for you.";
-"token.transactionConfirmation.error.description.gasPriceTooLow" = "The gas price specified for this transaction is too low. JaxWallet is using a live oracle and updates the gas price every 15 seconds. We recommend you to choose preselected amount (Slow, Average, Fast).";
-"token.transactionConfirmation.error.description.gasLimitTooLow" = "The gas limit specified for this transaction is too low. JaxWallet is using a live oracle and updates the gas price every 15 seconds. We recommend you to choose preselected amount (Slow, Average, Fast).";
-"token.transactionConfirmation.error.description.gasLimitTooHigh" = "The gas price specified for this transaction is too high. JaxWallet is using a live oracle and updates the gas price every 15 seconds. We recommend you to choose preselected amount (Slow, Average, Fast).";
+"token.transactionConfirmation.error.description.gasPriceTooLow" = "The gas price specified for this transaction is too low. Jax UBI is using a live oracle and updates the gas price every 15 seconds. We recommend you to choose preselected amount (Slow, Average, Fast).";
+"token.transactionConfirmation.error.description.gasLimitTooLow" = "The gas limit specified for this transaction is too low. Jax UBI is using a live oracle and updates the gas price every 15 seconds. We recommend you to choose preselected amount (Slow, Average, Fast).";
+"token.transactionConfirmation.error.description.gasLimitTooHigh" = "The gas price specified for this transaction is too high. Jax UBI is using a live oracle and updates the gas price every 15 seconds. We recommend you to choose preselected amount (Slow, Average, Fast).";
 "token.transactionConfirmation.error.description.possibleChainIdMismatchError" = "You might be sending this transaction on the wrong chain.";
 "token.transactionConfirmation.error.description.executionRevertedError" = "It looks like you are trying to run a smart contract and the logic of that smart contract returns an error.";
 "token.transactionConfirmation.error.rectifyButtonTitle.insufficientFundsError" = "My Address";

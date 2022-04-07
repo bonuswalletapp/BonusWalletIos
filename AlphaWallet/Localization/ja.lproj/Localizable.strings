@@ -470,7 +470,7 @@
 "gettingStarted.subtitle" = "Welcome to AlphaWallet";
 "gettingStarted.newWallet" = "CREATE A NEW WALLET";
 "gettingStarted.alreadyHaveWallet" = "I already have a wallet:";
-"backup.prompt.title" = "Claim your free 1000 JRUPPEE by verifying KYC";
+"backup.prompt.title" = "Receive a 1000 JAX Rupee bonus after completing a simple ID verification";
 "backup.prompt.description.withAmount" = "You have not backed up your wallet yet. You have %@ USD net. Act now.";
 "backup.prompt.backupButton.title" = "Start verification";
 "backup.prompt.backup.remindLater" = "Remind me to back up later?";
