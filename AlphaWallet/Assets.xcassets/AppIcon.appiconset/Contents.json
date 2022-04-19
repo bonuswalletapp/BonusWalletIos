@@ -54,7 +54,12 @@
             "scale":"3x",
             "filename":"Icon-App-60x60@3x.png"
         },
-        
+        {
+            "idiom":"iphone",
+            "size":"76x76",
+            "scale":"2x",
+            "filename":"Icon-App-76x76@2x.png"
+        },
         {
             "idiom":"ipad",
             "size":"20x20",
@@ -113,7 +118,7 @@
             "size" : "1024x1024",
             "idiom" : "ios-marketing",
             "scale" : "1x",
-            "filename" : "appstore.png"
+            "filename" : "ItunesArtwork@2x.png"
         }
     ],
     "info":{
