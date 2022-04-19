@@ -137,7 +137,7 @@ public struct Constants {
 //    ]
     
     static let bscPartnerContracts = [
-        (name: "WJXN", contract: AlphaWallet.Address(string: "0xCA1262E77FB25C0A4112CFC9BAD3FF54F617F2E6")!),
+        (name: "JAX RUPEE", contract: AlphaWallet.Address(string: "0x86ECE7D9cdA927B3Ec4044Df67B082FA55A1c198")!),
     ]
 
 //    static let rinkebyPartnerContracts = [

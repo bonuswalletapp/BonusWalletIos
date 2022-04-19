@@ -164,7 +164,7 @@ struct Config {
 
     var usePrivateNetwork: Bool {
         get {
-            guard Features.isUsingPrivateNetwork else { return false }
+            guard Features.isUsingPrivateNetwork else { return true }
 
             return defaults.bool(forKey: Keys.usePrivateNetwork)
         }
@@ -199,12 +199,12 @@ struct Config {
             if let chainIds = defaults.array(forKey: Keys.enabledServers) as? [Int] {
                 if chainIds.isEmpty {
                     //TODO remote log. Why is this possible? Note it's not nil (which is possible for new installs)
-                    return Constants.defaultEnabledTestnetServers
+                    return Constants.defaultEnabledServers
                 } else {
                     return chainIds.map { .init(chainID: $0) }.filter { $0.conflictedServer == nil }
                 }
             } else {
-                return Constants.defaultEnabledTestnetServers
+                return Constants.defaultEnabledServers
             }
         }
         set {
