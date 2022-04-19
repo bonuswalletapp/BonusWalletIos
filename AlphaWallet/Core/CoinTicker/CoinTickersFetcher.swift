@@ -290,7 +290,7 @@ fileprivate struct Ticker: Codable {
                 return false
             }
         } else {
-            return symbol.localizedLowercase == tokenObject.symbol.localizedLowercase && name.localizedLowercase == tokenObject.name.localizedLowercase
+            return symbol.localizedLowercase == tokenObject.symbol.localizedLowercase// && name.localizedLowercase == tokenObject.name.localizedLowercase
         }
     }
 
