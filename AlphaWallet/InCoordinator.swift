@@ -108,7 +108,7 @@ class InCoordinator: NSObject, Coordinator {
     private lazy var tokenActionsService: TokenActionsServiceType = {
         let service = TokenActionsService()
         service.register(service: rampBuyService)
-        service.register(service: oneInchSwapService)
+//        service.register(service: oneInchSwapService)
 
         let honeySwapService = HoneySwap()
         honeySwapService.theme = navigationController.traitCollection.honeyswapTheme
