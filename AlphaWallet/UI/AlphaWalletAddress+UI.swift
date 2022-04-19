@@ -139,7 +139,7 @@ extension AlphaWallet.Address {
             return R.image.busd()
         case "0xb8bdd95b52ea5b815aaa214aedb8d01aed787157".uppercased():
             return R.image.jusd()
-        case "0xec7d5848f88246ca6984b8019d08b8524793b062".uppercased():
+        case "0x86ECE7D9cdA927B3Ec4044Df67B082FA55A1c198".uppercased():
             return R.image.jinr()
         default:
             return nil
