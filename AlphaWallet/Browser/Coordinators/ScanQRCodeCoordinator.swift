@@ -97,7 +97,6 @@ final class ScanQRCodeCoordinator: NSObject, Coordinator {
         }
     }
     
-
     @objc private func dismiss() {
         stopScannerAndDismiss {
             self.analyticsCoordinator.log(action: Analytics.Action.cancelScanQrCode)
