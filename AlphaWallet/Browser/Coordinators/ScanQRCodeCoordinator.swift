@@ -66,22 +66,37 @@ final class ScanQRCodeCoordinator: NSObject, Coordinator {
                     
                     }
 
-                    case .restricted:
-                    break
+                case .restricted, .denied, .notDetermined:
+                    DispatchQueue.main.async {
+                        let alert = UIAlertController(title: "Photo Library", message: "Photo Library access is necessary to use this app", preferredStyle: .alert)
 
-                    case .denied:
-                    break
-
-                    case .notDetermined:
-                        break
-
-                    @unknown default:
-                        break
+                        // Add "OK" Button to alert, pressing it will bring you to the settings app
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+                            UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+                        }))
+                        alert.popoverPresentationController?.sourceView = navigationController.view
+                        // Show the alert with animation
+                        parentNavigationController.present(alert, animated: true)
+                    }
+                    
                 }
+              }
+          } else {
+              DispatchQueue.main.async {
+                  let alert = UIAlertController(title: "Camera", message: "Camera access is absolutely necessary to use this app", preferredStyle: .alert)
+
+                  // Add "OK" Button to alert, pressing it will bring you to the settings app
+                  alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+                      UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+                  }))
+                  alert.popoverPresentationController?.sourceView = self.navigationController.view
+              // Show the alert with animation
+                  self.parentNavigationController.present(alert, animated: true)
               }
           }
         }
     }
+    
 
     @objc private func dismiss() {
         stopScannerAndDismiss {
