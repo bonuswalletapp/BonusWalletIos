@@ -45,14 +45,14 @@ class DappRequestSwitchExistingChainCoordinator: NSObject, Coordinator {
                 if server.chainID == targetChainId {
                     notifySwitchChainSucceededBecauseAlreadyActive(withCallbackId: callbackId)
                 } else {
-//                    promptAndSwitchToExistingServerInBrowser(existingServer: existingServer, viewController: viewController, callbackID: callbackId)
-                    self.delegate?.switchBrowserToExistingServer(existingServer, url: self.currentUrl, inCoordinator: self)
+                    promptAndSwitchToExistingServerInBrowser(existingServer: existingServer, viewController: viewController, callbackID: callbackId)
+//                    self.delegate?.switchBrowserToExistingServer(existingServer, url: self.currentUrl, inCoordinator: self)
                 }
             } else {
-//                promptAndActivateExistingServer(existingServer: existingServer, inViewController: viewController, callbackID: callbackId)
-                let enableChain = EnableChain(existingServer, restartQueue: restartQueue, url: nil)
-                enableChain.delegate = self
-                enableChain.run()
+                promptAndActivateExistingServer(existingServer: existingServer, inViewController: viewController, callbackID: callbackId)
+//                let enableChain = EnableChain(existingServer, restartQueue: restartQueue, url: nil)
+//                enableChain.delegate = self
+//                enableChain.run()
             }
         } else {
             delegate?.failed(withErrorMessage: R.string.localizable.switchChainErrorNotSupportedChainId(targetChain.chainId), withCallbackId: callbackId, inCoordinator: self)
