@@ -62,7 +62,7 @@ public struct Constants {
 
     // support
     public static let supportEmail = "feedback@jaxwallet.io"
-    public static let dappsBrowserURL = "https://beta.jax.money/kyc.php"
+    public static let dappsBrowserURL = "https://www.jax.money/kyc.php"
 
     //Ethereum null variables
     public static let nullTokenId = "0x0000000000000000000000000000000000000000000000000000000000000000"
@@ -145,10 +145,10 @@ public struct Constants {
 //    ]
     
     static let bscTestPartnerContracts = [
-        (name: "WJXN", contract: AlphaWallet.Address(string: "0x3a171b7c5d671e3c4bb5823b8fd265f4e4e9a399")!),
-        (name: "BUSD", contract: AlphaWallet.Address(string: "0xa51bcdc792285598ba7443c71d557e0b7df6f991")!),
-        (name: "WJAX", contract: AlphaWallet.Address(string: "0x783f4a2efab4f34d6a0d88b71cf1fac6d9b46ff0")!),
-        (name: "JAX DOLLAR", contract: AlphaWallet.Address(string: "0xb8bdd95b52ea5b815aaa214aedb8d01aed787157")!),
+//        (name: "WJXN", contract: AlphaWallet.Address(string: "0x3a171b7c5d671e3c4bb5823b8fd265f4e4e9a399")!),
+//        (name: "BUSD", contract: AlphaWallet.Address(string: "0xa51bcdc792285598ba7443c71d557e0b7df6f991")!),
+//        (name: "WJAX", contract: AlphaWallet.Address(string: "0x783f4a2efab4f34d6a0d88b71cf1fac6d9b46ff0")!),
+//        (name: "JAX DOLLAR", contract: AlphaWallet.Address(string: "0xb8bdd95b52ea5b815aaa214aedb8d01aed787157")!),
         (name: "JAX RUPEE", contract: AlphaWallet.Address(string: "0xec7d5848f88246ca6984b8019d08b8524793b062")!),
     ]
     
