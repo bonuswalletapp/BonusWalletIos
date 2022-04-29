@@ -164,7 +164,7 @@ class PromptBackupCoordinator: Coordinator {
     private func showCreateBackupAfterWalletCreationPrompt() {
         guard canBackupWallet else { return }
         guard !isBackedUp else { return }
-        guard !isImported else { return }
+//        guard !isImported else { return }
         updateState { state in
             state.prompt[wallet.address] = .newWallet
             writeState(state)
@@ -175,7 +175,7 @@ class PromptBackupCoordinator: Coordinator {
     func showCreateBackupAfterReceiveNativeCryptoCurrencyPrompt(nativeCryptoCurrency: BigInt) {
         guard canBackupWallet else { return }
         guard !isBackedUp else { return }
-        guard !isImported else { return }
+//        guard !isImported else { return }
         guard !hasShownNativeCryptoCurrencyReceivedPrompt else { return }
         updateState { state in
             state.prompt[wallet.address] = .receivedNativeCryptoCurrency(nativeCryptoCurrency)
@@ -188,7 +188,7 @@ class PromptBackupCoordinator: Coordinator {
     private func showCreateBackupAfterIntervalPrompt() {
         guard canBackupWallet else { return }
         guard !isBackedUp else { return }
-        guard !isImported else { return }
+//        guard !isImported else { return }
         guard let time = timeToShowIntervalPassedPrompt else { return }
         guard time.isEarlierThan(date: .init()) else { return }
         updateState { state in
@@ -203,7 +203,7 @@ class PromptBackupCoordinator: Coordinator {
         nativeCryptoCurrencyDollarValueInUsd = valueInUsd
         guard canBackupWallet else { return }
         guard !isBackedUp else { return }
-        guard !isImported else { return }
+//        guard !isImported else { return }
         let hasExceededThreshold = valueInUsd >= PromptBackupCoordinator.thresholdNativeCryptoCurrencyAmountInUsdToPromptBackup
         let toShow: Bool
         if isShowingExceededThresholdPrompt {
@@ -245,7 +245,7 @@ class PromptBackupCoordinator: Coordinator {
     private func remindLater() {
         guard canBackupWallet else { return }
         guard !isBackedUp else { return }
-        guard !isImported else { return }
+//        guard !isImported else { return }
         updateState { state in
             state.prompt[wallet.address] = nil
             state.backupState[wallet.address]?.timeToShowIntervalPassedPrompt = Date(timeIntervalSinceNow: PromptBackupCoordinator.secondsInAMonth)
