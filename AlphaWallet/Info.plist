@@ -87,6 +87,10 @@
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
+		<key>NSAllowsArbitraryLoadsForMedia</key>
+		<true/>
+		<key>NSAllowsArbitraryLoadsInWebContent</key>
+		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>$(ALPHAWALLET_PRODUCT_NAME) uses the camera to scan QR codes</string>

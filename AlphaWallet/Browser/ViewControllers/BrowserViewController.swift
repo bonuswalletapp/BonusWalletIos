@@ -5,6 +5,7 @@ import UIKit
 import WebKit
 import JavaScriptCore
 import Result
+//import WKWebViewRTC
 
 protocol BrowserViewControllerDelegate: AnyObject {
     func didCall(action: DappAction, callbackID: Int, inBrowserViewController viewController: BrowserViewController)
@@ -15,7 +16,7 @@ protocol BrowserViewControllerDelegate: AnyObject {
     func handleCustomUrlScheme(_ url: URL, inBrowserViewController viewController: BrowserViewController)
 }
 
-final class BrowserViewController: UIViewController {
+final class BrowserViewController: UIViewController, WKUIDelegate, UIScrollViewDelegate {
     static let locationChangedEventName = "locationChanged"
 
     private var myContext = 0
@@ -51,6 +52,8 @@ final class BrowserViewController: UIViewController {
         webView.allowsBackForwardNavigationGestures = true
         webView.translatesAutoresizingMaskIntoConstraints = false
         webView.navigationDelegate = self
+        webView.uiDelegate = self
+        webView.scrollView.delegate = self
         if isDebug {
             webView.configuration.preferences.setValue(true, forKey: Keys.developerExtrasEnabled)
         }
@@ -68,6 +71,7 @@ final class BrowserViewController: UIViewController {
     lazy var config: WKWebViewConfiguration = {
         let config = WKWebViewConfiguration.make(forType: .dappBrowser(server), address: account.address, in: ScriptMessageProxy(delegate: self))
         config.websiteDataStore = WKWebsiteDataStore.default()
+        config.allowsInlineMediaPlayback = true
         return config
     }()
 
@@ -83,6 +87,8 @@ final class BrowserViewController: UIViewController {
         webView.addSubview(progressView)
         webView.bringSubviewToFront(progressView)
         view.addSubview(errorView)
+        
+//        WKWebViewRTC(wkwebview: webView, contentController: webView.configuration.userContentController)
 
         NSLayoutConstraint.activate([
             webView.anchorsConstraint(to: view),
@@ -201,6 +207,10 @@ final class BrowserViewController: UIViewController {
 
 extension BrowserViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        guard #available(iOS 14.2, *) else {
+            webView.evaluateJavaScript("delete navigator.__proto__.mediaDevices")
+            return
+        }
         recordURL()
         hideErrorView()
     }

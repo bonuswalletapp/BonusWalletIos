@@ -42,6 +42,8 @@ target 'BonusWallet' do
   pod 'CocoaLumberjack', '3.7.0'
   pod 'AlphaWalletAddress', :path => 'modules/AlphaWalletAddress'
   pod 'Apollo'
+  # support webview rtc
+#  pod 'WKWebViewRTC'
   
   target 'AlphaWalletTests' do
       inherit! :search_paths
