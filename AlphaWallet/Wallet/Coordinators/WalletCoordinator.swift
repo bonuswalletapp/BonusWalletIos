@@ -137,7 +137,7 @@ extension WalletCoordinator: ImportWalletViewControllerDelegate {
     }
 
     func didImportAccount(account: Wallet, in viewController: ImportWalletViewController) {
-        config.addToWalletAddressesAlreadyPromptedForBackup(address: account.address)
+//        config.addToWalletAddressesAlreadyPromptedForBackup(address: account.address)
         didCreateAccount(account: account)
     }
 }

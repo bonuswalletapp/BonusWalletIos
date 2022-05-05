@@ -191,7 +191,7 @@ class AppCoordinator: NSObject, Coordinator {
         }
 
         let promptBackupCoordinator = PromptBackupCoordinator(keystore: keystore, wallet: wallet, config: config, analyticsCoordinator: analyticsService)
-        promptBackupCoordinator.start()
+//        promptBackupCoordinator.start()
         addCoordinator(promptBackupCoordinator)
 
         let coordinator = InCoordinator(
